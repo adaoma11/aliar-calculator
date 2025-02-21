@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora JS | Aliar Sistemas</title>
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=backspace"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="calculator">
+        <div id="display"></div>
+        <div class="buttons">
+          <button data-key="+">+</button>
+          <button data-key="-">-</button>
+          <button data-key="x">x</button>
+          <button data-key="/">/</button>
+          <button data-key="7">7</button>
+          <button data-key="8">8</button>
+          <button data-key="9">9</button>
+          <button data-key="c">C</button>
+          <button data-key="4">4</button>
+          <button data-key="5">5</button>
+          <button data-key="6">6</button>
+          <button data-key="backspace">
+            <span class="material-symbols-outlined"> backspace </span>
+          </button>
+          <button data-key="1">1</button>
+          <button data-key="2">2</button>
+          <button data-key="3">3</button>
+          <button data-key="=" id="equals">=</button>
+          <button data-key="0" id="zero">0</button>
+          <button data-key=".">.</button>
+        </div>
+      </div>
+      <span id="openModalBtn"></span>
+    </main>
+
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <h2>Bem-vindo(a)!</h2>
+        <p>
+          É possível utilizar tanto o mouse quanto o teclado para interagir com
+          a calculadora.
+        </p>
+        <h3>Atalhos:</h3>
+
+        <div class="shortcuts-container">
+          <table>
+            <tr>
+              <td><span class="key">X</span> ou <span class="key">*</span></td>
+              <td>Multiplicação</td>
+            </tr>
+            <tr>
+              <td><span class="key">backspace</span></td>
+              <td>Apaga o último dígito</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="key">ESC</span> ou <span class="key">C</span>
+              </td>
+              <td>Reseta a tela</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/js/script.js"></script>
+    <script src="src/js/modal.js"></script>
+  </body>
+</html>
