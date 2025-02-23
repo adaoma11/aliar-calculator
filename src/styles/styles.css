@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  bottom: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -26,6 +26,7 @@ main {
 /* Calculator */
 
 .calculator {
+  width: 325px;
   background-color: #333;
   padding: 20px;
   border-radius: 10px;
@@ -45,6 +46,7 @@ main {
   font-size: 24px;
   border-radius: 5px;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .buttons {
@@ -79,6 +81,11 @@ button#equals:hover {
 
 button#zero {
   grid-column: span 2;
+}
+
+.error {
+  color: red !important;
+  font-weight: bold;
 }
 
 /* Modal */

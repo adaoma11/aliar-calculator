@@ -7,21 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.style.display = 'flex';
   };
 
-  openModal();
-
   const closeModal = () => {
     modal.style.display = 'none';
-    localStorage.setItem('modalShown', 'true');
   };
 
   openBtn.addEventListener('click', openModal);
 
-  closeBtn.addEventListener('click', closeModal);
+  // closeBtn.addEventListener('click', closeModal);
+
   modal.addEventListener('click', (e) => {
-    if (e.target === modal) closeModal();
+    if (e.target === modal || e.target === closeBtn) closeModal();
   });
 
-  if (!localStorage.getItem('modalShown')) {
-    openModal();
-  }
+  openModal();
 });
